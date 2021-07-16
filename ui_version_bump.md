@@ -1,0 +1,11 @@
+- Confirm local master is up to date
+- Checkout a new `version-bump` branch
+- Open `bower.json`, and bump patch version
+- `bundle install`
+- Commit changes and push branch
+- Create PR and wait for circle before merging
+- Go to releases and draft new release
+  - Name it `v${MAJOR}.${MINOR}.${NEW_PATCH}`
+  - In description add all PR's since previous release (use following command)
+    - `git log --merges --pretty='- %s' master v${PREVIOUS_VERSION}..HEAD | grep 'pull request'`
+  - Release
