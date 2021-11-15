@@ -10,6 +10,9 @@ There's several place we store permissions in qapps ->
 ## Known Feature Toggles
 
 - New Facility Roles with Registries
+- New Validation Report
+
+
 
 [roles]: http://localhost:3000/users/1/facility_role/edit
 [toggles]: http://localhost:3000/facilities/1/feature_toggles
