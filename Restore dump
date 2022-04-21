@@ -1,0 +1,28 @@
+From web project
+bundle install
+bundle exec rake db:drop db:create
+pg_restore -d currica_development --verbose --clean --no-acl --no-owner ../dumps/<DUMP_NAME>
+bundle exec rake db:migrate
+yarn install
+rails server or with webpack-dev-server yarn start
+
+
+To drop / delete a db
+Open console and navigate to web repo
+Use ‘rake db:drop’
+To create db
+Open console and navigate to web repo
+Use ‘rake db:create’ … or ‘rake db:create:primary’
+Open PGAdmin
+Open DB ‘currica_development’ 
+Right click on it
+Click ‘Restore’
+Select file from dump
+Select tab Data/Objects
+Switch tabs: Owner
+Once db is created run ‘rake db:migrate’
+Need to update password
+Run ‘rails c’ to open console
+Type ‘User.find(1)’
+Type ‘User.find(1).update(password: “password3#“)’
+Update activity with ‘User.find(1).update(last_activity_at: nil)’
