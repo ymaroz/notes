@@ -12,7 +12,7 @@ From `web` project
 
 
 Need to update password
-Run ‘rails c’ to open console
-Type ‘User.find(1)’
-Type ‘User.find(1).update(password: “password3#“)’
-Update activity with ‘User.find(1).update(last_activity_at: nil)’
+- Run ‘rails c’ to open console
+- Type ‘User.find(1)’
+- Type ‘User.find(1).update(password: “password3#“)’
+- Update activity with ‘User.find(1).update(last_activity_at: nil)’
