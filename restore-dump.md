@@ -16,3 +16,4 @@ Need to update password
 - Type ‘User.find(1)’
 - Type ‘User.find(1).update(password: “password3#“)’
 - Update activity with ‘User.find(1).update(last_activity_at: nil)’
+- Update User.find(1).update(locked_at: nill)
